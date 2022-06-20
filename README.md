@@ -27,6 +27,10 @@ Database H2 and data persist across restarts.
     - Do maven clean install all projects in order wallet-subdomain,wallet-microservice,wallet-loadbalancer,registry-server 
     - Run projects in order: registry-server,wallet-microservice,wallet-loadbalancer
     - You can create instance of wallet-microservice as much as you like for scalling.
+    
+## Side Note
+    - You can get valid random identity number from https://www.simlict.com/. It is necessary for wallets
+
 
  ## Swagger Api Documentation
 
