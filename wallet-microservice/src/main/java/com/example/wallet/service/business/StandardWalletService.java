@@ -57,6 +57,7 @@ public class StandardWalletService implements WalletService {
 	}
 
 	@Override
+	@Transactional(isolation = Isolation.READ_COMMITTED)
 	public PlayerResponse debitPlayer(String identity, double amount) {
 		try {
 			Player player = walletApplication.debitPlayer(Identity.valueOf(identity),Amount.valueOf(new BigDecimal(amount)));
@@ -67,6 +68,7 @@ public class StandardWalletService implements WalletService {
 	}
 
 	@Override
+	@Transactional(isolation = Isolation.READ_COMMITTED)
 	public PlayerResponse creditPlayer(String identity, double amount) {
 		try {
 			Player player = walletApplication.creditPlayer(Identity.valueOf(identity),Amount.valueOf(new BigDecimal(amount)));
