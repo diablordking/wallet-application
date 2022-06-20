@@ -39,7 +39,7 @@ Database H2 and data persist across restarts.
 
 ## For Production Environment
 
-it needs Logging mechanism,Configuration server,Auto scalling, Dockerize all projects
+it needs Logging mechanism,Configuration server,Auto scalling, Dockerize all projects, Apache Kafka
 
 ### Writer
 
