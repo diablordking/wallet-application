@@ -1,0 +1,34 @@
+package com.example.wallet.dto.response;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.ALWAYS) 	
+public class CreatePlayerResponse {
+
+	private final String status;
+	private final String reason;
+
+	public CreatePlayerResponse(String status) {
+		this.status = status;
+		this.reason = null;
+	}
+	public CreatePlayerResponse() {
+		this.status = "";
+		this.reason = "";
+	}
+	
+
+	public CreatePlayerResponse(String status, String reason) {
+		this.status = status;
+		this.reason = reason;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public String getReason() {
+		return reason;
+	}
+
+}
